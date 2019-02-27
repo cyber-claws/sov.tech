@@ -31,7 +31,7 @@ export default class Fact extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-6"><Link to={`/`}>Return to home</Link></div>
-                            <div className="col-6"><a href="#" onClick={e => this.handleGetOneMore(e)}>Get one more</a></div>
+                            <div className="col-6"><a href="https://sov.ishmaelsibisi.net" onClick={e => this.handleGetOneMore(e)}>Get one more</a></div>
                         </div>
                     </div>
                 </div>}
