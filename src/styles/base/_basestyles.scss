@@ -1,0 +1,84 @@
+.app {
+    a {
+        text-decoration: none !important;
+    }
+    nav {
+        height: $nav-height;
+        width: 100%;
+        position: fixed;
+        background-color: rgba(255,255,255,.85);
+        z-index: 95;
+        top: 0;
+        left: 0;
+        padding: 0 10px;
+        border-bottom: 1px solid $secondary;
+        a {
+            float: left;
+            img {
+                height: $nav-height;
+                width: auto;
+            }
+        }
+        h1 {
+            float:left;
+            margin-left: 5px;
+            color: $secondary;
+
+        }
+    }
+}
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255,255,255,.95);
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;  
+        .loader {
+            width: 10px;
+            height: 10px;
+            background: $primary;
+            border-radius: 50%;
+            animation: .7s ease 2s pulse infinite;
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    
+    25% {
+        width: 25px;
+        height: 25px;
+        opacity: .75;
+    }
+    
+    50% {
+        width: 50px;
+        height: 50px;
+        opacity: .5;
+    }
+
+    75% {
+        width: 75px;
+        height: 75px;
+        opacity: .25;
+    }
+
+    100% {
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+    }
+}
